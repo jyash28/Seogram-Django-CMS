@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cms_tags  menu_tags sekizai_tags %}
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+  
+{% block content %}
+  <div class="page-section">
+
+  <div class="container">
+      <div class="page-banner">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-6">
+            <nav aria-label="Breadcrumb">
+              <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+                <li class="breadcrumb-item"><a href="">Home</a></li>
+                <li class="breadcrumb-item active">Service</li>
+              </ul>
+            </nav>
+            <h1 class="text-center">Our Services</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          {% placeholder "service page card" %}
+{#          {% static_placeholder "service page new" %}#}
+{#        <div class="col-lg-4">#}
+{#          <div class="card-service">#}
+{#            <div class="header">#}
+{#              {% placeholder "servicepage card images" %}#}
+{#            </div>#}
+{#            <div class="body">#}
+{#              <h5 class="text-secondary">{% placeholder "servicepage card title" %}</h5>#}
+{#              <p>{% placeholder "servicepage card description" %}</p>#}
+{#              <a href="service.html" class="btn btn-primary">Read More</a>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="col-lg-4">#}
+{#          <div class="card-service">#}
+{#            <div class="header">#}
+{#              <img src="{% static 'img/services/service-2.svg' %}" alt="">#}
+{#            </div>#}
+{#            <div class="body">#}
+{#              <h5 class="text-secondary">Content Marketing</h5>#}
+{#              <p>We help you define your SEO objective & develop a realistic strategy with you</p>#}
+{#              <a href="service.html" class="btn btn-primary">Read More</a>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="col-lg-4">#}
+{#          <div class="card-service">#}
+{#            <div class="header">#}
+{#              <img src="{% static 'img/services/service-3.svg' %}" alt="">#}
+{#            </div>#}
+{#            <div class="body">#}
+{#              <h5 class="text-secondary">Keyword Research</h5>#}
+{#              <p>We help you define your SEO objective & develop a realistic strategy with you</p>#}
+{#              <a href="service.html" class="btn btn-primary">Read More</a>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  <div class="page-section bg-light">
+
+
+
+    <div class="container">
+      <div class="text-center">
+        <div class="subhead">{% placeholder "service-page service-title" %}</div>
+        <h2 class="title-section">{% placeholder "service-page service-help" %}</h2>
+        <div class="divider mx-auto"></div>
+
+        <div class="row">
+            {% placeholder "service-page service-data" %}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="col-sm-6 col-lg-4 col-xl-3 py-3">#}
+{#            <div class="features">#}
+{#              <div class="header mb-3">#}
+{#                <span class="mai-business"></span>#}
+{#              </div>#}
+{#              <h5>OnSite SEO</h5>#}
+{#              <p>We analyse your website's structure, internal architecture & other key</p>#}
+{#            </div>#}
+{#          </div>#}
+        </div>
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+{% endblock %}

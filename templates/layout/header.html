@@ -1,0 +1,18 @@
+{% load menu_tags %}
+{% load static %}
+{% block content %}
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+            <div class="container">
+                <a href="/" class="navbar-brand">Seo<span class="text-primary">Gram.</span></a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% show_menu 0 100 100 100 'layout/menu.html' %}
+            </div>
+        </nav>
+    </header>
+{% endblock %}

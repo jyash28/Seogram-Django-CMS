@@ -1,0 +1,29 @@
+{% load sekizai_tags cms_tags  menu_tags thumbnail  %}
+
+<div class="col-lg-4 py-3 wow zoomIn">
+          <div class="card-pricing">
+            <div class="header">
+              <div class="pricing-type">{{ instance.plantype }}</div>
+              <div class="price">
+                <span class="dollar">$</span>
+{#                <h1>39<span class="suffix">.99</span></h1>#}
+                  <h1>{{ instance.price }}</h1>
+              </div>
+              <h5>Per Month</h5>
+            </div>
+            <div class="body">
+{#                {{ instance.benefits.all }}#}
+{#                {% for i in data %}#}
+              <p >{{ instance.data|linebreaks }}<span class="suffix"></span></p>
+
+{#              <p>{{ i.data }} <span class="suffix">Keywords</span></p>#}
+{#              <p>{{ i.data }} <span class="suffix">Reviews</span></p>#}
+{#              <p>{{ i.data }}<span class="suffix">Optimization</span></p>#}
+{#              <p>{{ i.data }}<span class="suffix">Support</span></p>#}
+{#                {% endfor %}#}
+            </div>
+            <div class="footer">
+              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+            </div>
+          </div>
+        </div>

@@ -1,0 +1,19 @@
+{% load sekizai_tags cms_tags  menu_tags thumbnail static  %}
+
+
+{% thumbnail instance.image '156x136' crop subject_location=instance.image.subject_location as image %}
+
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="{{image.url}}" width="{{ image.width }}" height="{{ image.height }}" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">{{instance.title}}</h5>
+<!--              <p>We help you define your SEO objective & develop a realistic strategy with you</p>-->
+                <p>{{instance.description|linebreaks }}</p>
+              <a href="{{ instance.page.get_absolute_url }}" class="btn btn-primary">Read More</a>
+{#                {% static_placeholder "card-button" %}#}
+            </div>
+          </div>
+        </div>

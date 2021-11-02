@@ -1,0 +1,14 @@
+ {% load sekizai_tags cms_tags  menu_tags thumbnail  %}
+
+
+          {% thumbnail instance.image '30x30' crop subject_location=instance.image.subject_location as image %}
+        <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+{#                <span class="mai-business"></span>#}
+                  <img src="{{image.url}}" width="{{ image.width }}" height="{{ image.height }}" alt="">
+              </div>
+              <h5>{{instance.title}}</h5>
+              <p>{{instance.description|linebreaks }}</p>
+            </div>
+        </div>

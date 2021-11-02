@@ -1,0 +1,17 @@
+{% load sekizai_tags cms_tags  menu_tags thumbnail  %}
+
+
+          {% thumbnail instance.image '185x130' crop subject_location=instance.image.subject_location as image %}
+        <div class="col-lg-4 py-3 wow fadeInUp">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-thumb">
+                <img src="{{image.url}}" width="{{ image.width }}" height="{{ image.height }}" alt="">
+              </div>
+            </div>
+            <div class="body">
+              <h5 class="post-title"><a href="#">{{ instance.blogtitle }}</a></h5>
+              <div class="post-date">Posted on <a href="#">{{ instance.posteddate }}</a></div>
+            </div>
+          </div>
+        </div>

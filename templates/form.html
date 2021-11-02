@@ -1,0 +1,95 @@
+{#       {% load sekizai_tags cms_tags  menu_tags thumbnail  %}#}
+{#          <form action="{% url "demoapp:formsubmit" %} " class="contact-form py-5 px-lg-5" method="post">#}
+{#              {% csrf_token %}#}
+{#            <h2 class="mb-4 font-weight-medium text-secondary">Get in touch</h2>#}
+{#            <div class="row form-group">#}
+{#              <div class="col-md-6 mb-3 mb-md-0">#}
+{#                <label class="text-black" for="fname">Firstname</label>#}
+{#                <input type="text" id="fname" class="form-control">#}
+{#              </div>#}
+{#              <div class="col-md-6">#}
+{#                <label class="text-black" for="lname">Lastname</label>#}
+{#                <input type="text" id="lname" class="form-control">#}
+{#              </div>#}
+{#            </div>#}
+{##}
+{#            <div class="row form-group">#}
+{#              <div class="col-md-12">#}
+{#                <label class="text-black" for="email">Email</label>#}
+{#                <input type="email" id="email" class="form-control">#}
+{#              </div>#}
+{#            </div>#}
+{##}
+{#            <div class="row form-group">#}
+{#              <div class="col-md-12">#}
+{#                <label class="text-black" for="subject">Subject</label>#}
+{#                <input type="text" id="subject" class="form-control">#}
+{#              </div>#}
+{#            </div>#}
+{##}
+{#            <div class="row form-group">#}
+{#              <div class="col-md-12">#}
+{#                <label class="text-black" for="message">Message</label>#}
+{#                <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Write your notes or questions here..."></textarea>#}
+{#              </div>#}
+{#            </div>#}
+{##}
+{#            <div class="row form-group mt-4">#}
+{#              <div class="col-md-12">#}
+{#                <input type="submit" value="Send Message" class="btn btn-primary">#}
+{#              </div>#}
+{#            </div>#}
+{#          </form>#}
+{##}
+{#{% load l10n %}#}
+{##}
+{#{% if form %}#}
+{#    {% if form.is_multipart %}#}
+{#        <form enctype="multipart/form-data" method="POST" action="">#}
+{#    {% else %}#}
+{#       <form method="POST" action="">#}
+{#    {% endif %}#}
+{#	{% csrf_token %}#}
+{#		{{ form.as_p }}#}
+{#		<input type="submit" name="contact_plus_form_{{ contact.id|unlocalize }}" {% if contact.submit_button_text %} value="{{ contact.submit_button_text }}"{% endif %} />#}
+{#	</form>#}
+{#{% else %}#}
+{#	{{ contact.thanks|safe }}#}
+{#{% endif %}#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#<div class="contacts-plugin plugin">#}
+{#  <div class="inner">#}
+{#    <div class="contact-form">#}
+{#      {% if title %}<h3>{{ title }}</h3>{% endif %}#}
+{#      <form method="post" action="{{ form_action }}">#}
+{#        {% csrf_token %}#}
+{#          {{ form.as_p }}#}
+{#        {% for hidden in form.hidden_fields %}#}
+{#        {% if hidden.name == 'referer' %}#}
+{#        <input type="hidden" name="{{ hidden.name }}" value="{{ hidden.value }}">#}
+{#        {% endif %}#}
+{#        {% endfor %}#}
+{##}
+{#        {% for visible in form.visible_fields %}#}
+{#        <div class="field-wrapper field-row half {{ visible.css_classes }}">#}
+{#          {{ visible.label_tag }}#}
+{#          <div class="help-text">{{ visible.help_text }}</div>#}
+{#          <div class="error empty"></div>#}
+{#          {{ visible }}#}
+{#        </div>#}
+{#        {% endfor %}#}
+{##}
+{#        <input type="submit" value="Submit">#}
+{#      </form>#}
+{#      <div class="legend"><span class="required">*</span> Required field</div>#}
+{#      <div class="success" style="display:none">Thank you, a member of our team will contact you shortly, if appropriate.</div>#}
+{#      <div class="errors" style="display:none"><span class="form-errors"></span></div>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}
+
+
